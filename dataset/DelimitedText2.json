@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "DelimitedText2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "wsp-vishal-synapse-WorkspaceDefaultStorage",
@@ -10,36 +10,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "transactions.csv",
-				"fileSystem": "input"
+				"fileSystem": "output"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": [
-			{
-				"name": "transaction_id",
-				"type": "String"
-			},
-			{
-				"name": "account_id",
-				"type": "String"
-			},
-			{
-				"name": "transaction_date",
-				"type": "String"
-			},
-			{
-				"name": "transaction_amount",
-				"type": "String"
-			},
-			{
-				"name": "transaction_type",
-				"type": "String"
-			}
-		]
+		"schema": []
 	},
 	"type": "Microsoft.Synapse/workspaces/datasets"
 }
